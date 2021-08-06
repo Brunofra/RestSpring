@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "4543716f-8843-4c70-8883-1ba8492c8db1",
+		"name": "PDV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:80/user",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salvar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"nome\" : \"bruno alves c\",\r\n    \"email\" : \"brncarneiro@gmail.com\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/user",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idUser\": 2,\r\n        \"nome\": \"bruno alves carneiro\",\r\n        \"email\": \"brncarneiro@gmail.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/user",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:80/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
